@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Curso de HTML</title>
+    <link rel="stylesheet" href="Styles.css">
+    <style>
+
+        #container {
+
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #container > div{
+            background-color: chocolate;
+            margin: 20px;
+            padding: 20px;
+            width: 200px;
+        }
+
+
+        div{
+
+            background-color: rgb(182, 182, 182);
+            width: 50%;
+            height: 300px;
+            padding: 50px;
+            margin: 80px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: larger;
+            font-weight: 800;
+            border: 1px black solid;
+        }
+        table {
+
+            border: 1px solid black;
+            border-collapse: collapse;
+            
+        }
+
+        td,th {
+
+            border: 1px solid black;
+            padding: 5px;
+        }
+        #foo{
+            color: chartreuse;
+        }
+        .encabezados{
+
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+   
+<br>
+    <h1>Imágenes</h1>
+    <img src="Imagen1.png" alt="grafico" width="300">
+
+   <h1>Listas</h1>
+   <h2>Esto es una lista ordenada</h2>
+    <ol>
+        <li>Primer elemento</li>
+        <ul>
+            <li>una cosa</li>
+            <li>otra</li>
+        </ul>
+        <li>Segundoelemento</li>
+        <li>Tercer elemento</li>
+
+    </ol>
+    <h2>Esto es una lista "no ordenada"</h2>
+    <ul>
+        <li>Elemento uno</li>
+        <li>Elemento dos</li>
+        <li>Y así sucesivamente</li>
+    </ul>
+
+    <h1> Enlaces</h1>
+    Este enlaza en la misma pçagina
+    <a href="https://google.com" target="blank">Click here</a> <br>
+
+    Este enlaza en una nueva pestaña
+    <a href="https://google.com" target="blank">Click here</a>
+
+    <h1>Tablas</h1>
+    <table>
+        <thead>
+            <tr>
+            <th>ENombre</th>
+            <th>Apellidos</th>
+            <th>Característica</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Perico</td>
+                <td>El de los palotes</td>
+                <td>Gilipollas</td>
+            </tr>
+            <tr>
+                <td>Paco</td>
+                <td>Porras</td>
+                <td>Perejiles</td>
+            </tr>
+
+
+        </tbody>
+
+
+
+    </table>
+
+    <h1>Formularios</h1>
+
+    <form>
+        <input type="text" placeholder="Tu nombre capullo" name="nombre">
+        <input type="password" placeholder="Contraseña capullo" name="password">
+        <br>
+
+        <input type="radio" value="red"> Rojo
+        <input type="radio" value="blue"> azul
+        <input type="submit">
+        <br>
+        <input list="listaopciones" placeholder="opcion" name="opcion">
+        <datalist id="listaopciones">
+            <option value="opcion1">
+            <option value="opcion2">
+            <option value="opcion3">
+
+        </datalist>
+
+
+
+    </form>
+
+    <h1 id=foo>Este encabezado, es distinto!!!</h1>
+
+    <h1 class="encabezados">Este encabezado, y el siguiente son de la misma class</h1>
+    <h1 class="encabezados">Este encabezado</h1>
+
+
+
+    <h1>DIV - Divisiones de la página</h1>
+    <div>
+        Esto está dentro de una DIV joder
+
+
+    </div>
+
+</body>
+
+
+</html>
